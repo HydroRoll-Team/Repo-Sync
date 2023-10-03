@@ -10,24 +10,24 @@ jobs:
   virtual-event-starter-kit1:
     runs-on: ubuntu-latest
     steps:
-      - name: virtual-event-starter-kit1
+      - name: OlivaDiceCore
         uses: TobKed/github-forks-sync-action@master
         with:
           github_token: ${{ secrets.PAT }}
-          upstream_repository: HsiangNianian/virtual-event-starter-kit1
-          target_repository: retrofor/virtual-event-starter-kit1
+          upstream_repository: OlivOS-Team/OlivaDiceCore
+          target_repository: HydroRoll-Team/OlivaDiceCore
           upstream_branch: main
           target_branch: main
           force: true
           tags: true
-      - name: OlivOS
+      - name: sealdice-core
         uses: TobKed/github-forks-sync-action@master
         with:
           github_token: ${{ secrets.PAT }}
-          upstream_repository: OlivOS-Team/OlivOS
-          target_repository: retrofor/OlivOS
-          upstream_branch: main
-          target_branch: main
+          upstream_repository: sealdice/sealdice-core
+          target_repository: HydroRoll-Team/sealdice-core
+          upstream_branch: master
+          target_branch: master
           force: true
           tags: true
       - name: Dice
@@ -35,17 +35,37 @@ jobs:
         with:
           github_token: ${{ secrets.PAT }}
           upstream_repository: Dice-Developer-Team/Dice
-          target_repository: retrofor/Dice
+          target_repository: HydroRoll-Team/Dice
           upstream_branch: newdev
           target_branch: newdev
           force: true
           tags: true
-      - name: go-cqhttp
+      - name: SinaNya
         uses: TobKed/github-forks-sync-action@master
         with:
           github_token: ${{ secrets.PAT }}
-          upstream_repository: Mrs4s/go-cqhttp
-          target_repository: retrofor/go-cqhttp
+          upstream_repository: SitaNya/SinaNya
+          target_repository: HydroRoll-Team/SinaNya
+          upstream_branch: master
+          target_branch: master
+          force: true
+          tags: true
+      - name: DiceParser
+        uses: TobKed/github-forks-sync-action@master
+        with:
+          github_token: ${{ secrets.PAT }}
+          upstream_repository: Rolisteam/DiceParser
+          target_repository: HydroRoll-Team/DiceParser
+          upstream_branch: master
+          target_branch: master
+          force: true
+          tags: true
+      - name: nonebot-dicepp
+        uses: TobKed/github-forks-sync-action@master
+        with:
+          github_token: ${{ secrets.PAT }}
+          upstream_repository: pear-studio/nonebot-dicepp
+          target_repository: HydroRoll-Team/nonebot-dicepp
           upstream_branch: master
           target_branch: master
           force: true
