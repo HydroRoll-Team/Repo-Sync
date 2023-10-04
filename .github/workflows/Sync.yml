@@ -13,7 +13,7 @@ jobs:
       - name: OlivaDiceCore
         uses: TobKed/github-forks-sync-action@master
         with:
-          github_token: ${{ secrets.PAT }}
+          github_token: ${{ secrets.INVITE_TOKEN }}
           upstream_repository: OlivOS-Team/OlivaDiceCore
           target_repository: HydroRoll-Team/OlivaDiceCore
           upstream_branch: main
