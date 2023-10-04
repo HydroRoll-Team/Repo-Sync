@@ -23,7 +23,7 @@ jobs:
       - name: sealdice-core
         uses: TobKed/github-forks-sync-action@master
         with:
-          github_token: ${{ secrets.PAT }}
+          github_token: ${{ secrets.CI_TOKEN }}
           upstream_repository: sealdice/sealdice-core
           target_repository: HydroRoll-Team/sealdice-core
           upstream_branch: master
@@ -33,7 +33,7 @@ jobs:
       - name: Dice
         uses: TobKed/github-forks-sync-action@master
         with:
-          github_token: ${{ secrets.PAT }}
+          github_token: ${{ secrets.CI_TOKEN }}
           upstream_repository: Dice-Developer-Team/Dice
           target_repository: HydroRoll-Team/Dice
           upstream_branch: newdev
@@ -43,7 +43,7 @@ jobs:
       - name: SinaNya
         uses: TobKed/github-forks-sync-action@master
         with:
-          github_token: ${{ secrets.PAT }}
+          github_token: ${{ secrets.CI_TOKEN }}
           upstream_repository: SitaNya/SinaNya
           target_repository: HydroRoll-Team/SinaNya
           upstream_branch: master
@@ -53,7 +53,7 @@ jobs:
       - name: DiceParser
         uses: TobKed/github-forks-sync-action@master
         with:
-          github_token: ${{ secrets.PAT }}
+          github_token: ${{ secrets.CI_TOKEN }}
           upstream_repository: Rolisteam/DiceParser
           target_repository: HydroRoll-Team/DiceParser
           upstream_branch: master
@@ -63,7 +63,7 @@ jobs:
       - name: nonebot-dicepp
         uses: TobKed/github-forks-sync-action@master
         with:
-          github_token: ${{ secrets.PAT }}
+          github_token: ${{ secrets.CI_TOKEN }}
           upstream_repository: pear-studio/nonebot-dicepp
           target_repository: HydroRoll-Team/nonebot-dicepp
           upstream_branch: master
