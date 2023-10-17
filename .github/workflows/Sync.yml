@@ -57,7 +57,7 @@ jobs:
           upstream_repository: Rolisteam/DiceParser
           target_repository: HydroRoll-Team/DiceParser
           upstream_branch: master
-          target_branch: master
+          target_branch: cpp
           force: true
           tags: true
       - name: nonebot-dicepp
@@ -67,6 +67,6 @@ jobs:
           upstream_repository: pear-studio/nonebot-dicepp
           target_repository: HydroRoll-Team/nonebot-dicepp
           upstream_branch: master
-          target_branch: cpp
+          target_branch: master
           force: true
           tags: true
