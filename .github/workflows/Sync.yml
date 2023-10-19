@@ -70,3 +70,13 @@ jobs:
           target_branch: master
           force: true
           tags: true
+      - name: ergo
+        uses: TobKed/github-forks-sync-action@master
+        with:
+          github_token: ${{ secrets.CI_TOKEN }}
+          upstream_repository: ergochat/ergo
+          target_repository: HydroRoll-Team/ergo
+          upstream_branch: master
+          target_branch: master
+          force: true
+          tags: true
