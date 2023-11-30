@@ -80,3 +80,13 @@ jobs:
           target_branch: master
           force: true
           tags: true
+      - name: dicer
+        uses: TobKed/github-forks-sync-action@master
+        with:
+          github_token: ${{ secrets.CI_TOKEN }}
+          upstream_repository: unvisitor/dicer
+          target_repository: HydroRoll-Team/dicer
+          upstream_branch: master
+          target_branch: master
+          force: true
+          tags: true
