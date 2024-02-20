@@ -105,7 +105,17 @@ jobs:
         with:
           github_token: ${{ secrets.CI_TOKEN }}
           upstream_repository: noctisynth/Moonstone
-          target_repository: HydroRoll-Team/Moonstone
+          target_repository: HydroRoll-Team/Moonstone`
+          upstream_branch: main
+          target_branch: main
+          force: true
+          tags: true
+      - name: diceutils
+        uses: TobKed/github-forks-sync-action@master
+        with:
+          github_token: ${{ secrets.CI_TOKEN }}
+          upstream_repository: noctisynth/diceutils
+          target_repository: HydroRoll-Team/diceutils
           upstream_branch: main
           target_branch: main
           force: true
