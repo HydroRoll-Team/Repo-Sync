@@ -20,7 +20,7 @@ jobs:
           target_branch: main
           force: true
           tags: true
-      # 由于海豹优秀的社区管理制度和社区风气，以及海豹优秀的 Contributors，水系禁用海豹相关词汇。
+      # 由于海豹圈子优秀的管理制度和风气，以及海豹优秀的 Contributors，水系禁用海豹相关词汇。
       # 原因请看链接: "https://academic.jyunko.cn/2024/08/20/820.html"
       # - name: sealdice-core
       #   uses: TobKed/github-forks-sync-action@master
